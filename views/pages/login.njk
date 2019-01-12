@@ -1,0 +1,32 @@
+{% include '../partials/header.njk' %}
+<div class="container">
+    <div class="col-12">
+        <div class="create-account float-right">
+            <a href="/create">
+                Create account
+            </a>
+        </div>
+    </div>
+    <form>
+        <div class="login-form col-md-6">
+            <div class="form-group">
+                <label for="username">
+                    Username:
+                </label>
+                <input type="text" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">
+                    password:
+                </label>
+                <input type="password" name="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary float-right">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% include '../partials/footer.njk' %}
