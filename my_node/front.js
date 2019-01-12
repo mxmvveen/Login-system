@@ -8,10 +8,6 @@ app.use(express.static('views'))
 
 app.set('view engine', 'njk');
 
-// app.get('/', (req, res) => {
-//     res.render('index');
-// });
-
 nunjucks.configure('views', {
     express: app,
     autoescape: true,
@@ -31,4 +27,3 @@ exports.startServer = () => {
         console.log('Server started!');
     });
 }
-
